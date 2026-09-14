@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BizzyPedia</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body class="fade-in-up">
+        <div class="grain"></div>
+
+        <header class="topbar">
+            <span class="wordmark">BizzyPedia</span>
+            <span class="topbar-tag">street glossary</span>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Say it like the streets already do.</h1>
+                <p class="hero-sub">Type any Naija Gen Z slang and get the real meaning, straight from the block.</p>
+            </section>
+
+            <section class="console" aria-label="Slang lookup">
+                <div class="console-row">
+                    <span class="console-led" aria-hidden="true"></span>
+                    <input type="text" class="slang-text" placeholder="type your slang here — e.g. burti" id="enter">
+                    <button class="search-btn">Search</button>
+                </div>
+            </section>
+
+            <section class="trending" aria-label="Trending slang">
+                <span class="trending-label">trending on the timeline</span>
+                <div class="chip-row" id="chipRow">
+                    <button class="chip" data-slang="burti">burti</button>
+                    <button class="chip" data-slang="yami">yami</button>
+                    <button class="chip" data-slang="ifatizzy">ifatizzy</button>
+                    <button class="chip" data-slang="nor be lie">nor be lie</button>
+                    <button class="chip" data-slang="baunffa">baunffa</button>
+                </div>
+            </section>
+
+            <section class="board" id="board" aria-live="polite">
+                <div class="board-inner">
+                    <h2 class="board-title">Result</h2>
+                    <p class="result-paragraph">Search a word to see it flip up here.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>BizzyPedia &mdash; built for the timeline, not the dictionary.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
